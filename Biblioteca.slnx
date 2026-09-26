@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/Core/">
+    <Project Path="Biblioteca.Application/Biblioteca.Application.csproj" />
+    <Project Path="Biblioteca.Domain/Biblioteca.Domain.csproj" />
+  </Folder>
+  <Folder Name="/Infrastructure/">
+    <Project Path="Biblioteca.Infrastructure/Biblioteca.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Presenters/">
+    <Project Path="Biblioteca.Api/Biblioteca.Api.csproj" />
+  </Folder>
+  <Folder Name="/Tests/" />
+</Solution>
