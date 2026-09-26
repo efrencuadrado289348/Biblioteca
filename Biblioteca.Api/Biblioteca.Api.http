@@ -1,6 +1,21 @@
 @Biblioteca.Api_HostAddress = http://localhost:5179
 
-GET {{Biblioteca.Api_HostAddress}}/weatherforecast/
+### Query 1: todos los libros
+GET {{Biblioteca.Api_HostAddress}}/api/libros
 Accept: application/json
 
-###
+### Query 2: libro por Id (Cien años de soledad)
+GET {{Biblioteca.Api_HostAddress}}/api/libros/b0000000-0000-0000-0000-000000000001
+Accept: application/json
+
+### Query 2: libro inexistente (debe responder 404)
+GET {{Biblioteca.Api_HostAddress}}/api/libros/00000000-0000-0000-0000-000000000000
+Accept: application/json
+
+### Query 3: libros de la categoría Novela
+GET {{Biblioteca.Api_HostAddress}}/api/categorias/c0000000-0000-0000-0000-000000000001/libros
+Accept: application/json
+
+### Query 3: libros de Ingeniería de Software
+GET {{Biblioteca.Api_HostAddress}}/api/categorias/c0000000-0000-0000-0000-000000000002/libros
+Accept: application/json
